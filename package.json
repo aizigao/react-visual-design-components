@@ -1,0 +1,66 @@
+{
+  "name": "react-visual-design-components",
+  "version": "0.0.8",
+  "description": "react-visual-design-components React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component  --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server",
+    "changelog": "conventional-changelog -p angular -i ./CHANGELOG.md -s -r 0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.less": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "antd-mobile": "^2.3.3"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@umijs/fabric": "^2.3.1",
+    "babel-plugin-import": "^1.13.1",
+    "conventional-changelog-cli": "^2.1.0",
+    "lint-staged": "^10.5.0",
+    "nwb": "0.25.x",
+    "nwb-less": "^0.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "yorkie": "^2.0.0"
+  },
+  "author": "kokiy",
+  "homepage": "https://github.com/react-visual-design/react-visual-design-components",
+  "license": "MIT",
+  "repository": "https://github.com/react-visual-design/react-visual-design-components",
+  "keywords": [
+    "react-components",
+    "react-visual-design-components"
+  ]
+}
