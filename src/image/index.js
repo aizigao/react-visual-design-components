@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-import './style.less'
+import './index.less'
 import propSchema from './config/schema.json'
 import defaultData from './config/data.json'
-import placeHolderImg from '../static/placeholder.png'
+import placeHolderImg from '../static/placeholder-1.png'
 
 export default class Image extends PureComponent {
   static propTypes = {
@@ -12,14 +12,14 @@ export default class Image extends PureComponent {
   }
 
   static defaultProps = {
-    data: defaultData || {},
+    data: defaultData,
   }
 
   static compAttr = {
     name: 'Image',
     id: 'Image',
     title: '图片',
-    iconName: 'StarOutlined',
+    iconName: 'PictureOutlined',
   }
 
   static propSchema = propSchema
@@ -29,8 +29,8 @@ export default class Image extends PureComponent {
       data: { link, src },
     } = this.props
     return (
-      <a href={link}>
-        <img className="header__img" src={src || placeHolderImg} />
+      <a className="visual-design-img" href={link}>
+        <img className="img" src={src || placeHolderImg} />
       </a>
     )
   }

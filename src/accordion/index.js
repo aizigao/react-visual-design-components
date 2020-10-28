@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Accordion } from 'antd-mobile'
 import propSchema from './config/schema.json'
 import defaultData from './config/data.json'
-import './style.less'
+import './index.less'
 
 export default class NewCarousel extends PureComponent {
   static propTypes = {

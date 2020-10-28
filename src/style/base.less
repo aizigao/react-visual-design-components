@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.text-ellipsis(@line-num:1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line-num;
+  overflow: hidden;
+  word-break: break-all;
+}

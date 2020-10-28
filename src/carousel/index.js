@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Carousel } from 'antd-mobile'
 import propSchema from './config/schema.json'
 import defaultData from './config/data.json'
-import './style.less'
+import './index.less'
 import placeHolderImg from '../static/placeholder.png'
 
 export default class NewCarousel extends PureComponent {

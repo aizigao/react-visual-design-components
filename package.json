@@ -1,6 +1,6 @@
 {
   "name": "react-visual-design-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "react-visual-design-components React component",
   "main": "lib/index.js",
   "module": "es/index.js",
