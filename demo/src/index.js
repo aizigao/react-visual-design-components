@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { HorizontalList, Image } from '../../src'
+import { Picker } from '../../src'
 
 export default class Demo extends Component {
   render() {
     return (
       <>
-        <HorizontalList />
-        <Image />
-        <Image />
+        <Picker />
       </>
     )
   }

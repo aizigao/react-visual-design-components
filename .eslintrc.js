@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 0,
     'react/jsx-no-bind': 0,
+    'react/no-danger': 0,
     'react/jsx-no-target-blank': 0,
     'jsx-a11y/anchor-has-content': 0,
     'jsx-a11y/no-noninteractive-tabindex': 0,
